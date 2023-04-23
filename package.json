@@ -10,6 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
+    "exppress": "^0.0.1-security",
     "nodemon": "^2.0.22"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ken1howard/Rest-Rant.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ken1howard/Rest-Rant/issues"
+  },
+  "homepage": "https://github.com/ken1howard/Rest-Rant#readme"
 }
