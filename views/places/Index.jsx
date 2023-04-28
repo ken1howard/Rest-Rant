@@ -30,5 +30,5 @@ function index (data) {
   }
   
 
-  module.exports = index
+  module.exports = Def
   
