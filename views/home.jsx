@@ -7,7 +7,7 @@ function home () {
             <main>
     <h1>HOME</h1>
     <div>
-      <img src="/public/CSS/images/Beach-Sunset.jpg" alt="Ocean Sunset" />
+      <img src="https://www.bestwesternsiestakey.com/wp-content/uploads/2021/08/sunset-scaled-735x0-c-default.jpg" alt="Ocean Sunset" />
       <div>
         Photo by <a href="https://unsplash.com/@jae462">Jay Antol</a> on <a href="https://unsplash.com/s/photos/free">Unsplash</a>
       </div>
