@@ -7,6 +7,9 @@ function show (data) {
           <main>
             <h1>{ data.place.name }</h1>
             <img className='images1' src={data.place.pic} alt={data.place.name} />
+            <h3>
+              Located in {data.place.city}, {data.place.state}
+            </h3>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning"> Edit </a>     
         
             <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
