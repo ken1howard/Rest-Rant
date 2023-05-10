@@ -1,4 +1,5 @@
 const React = require('react')
+const comment = require('../../models/comment.js')
 const Def = require('../default.jsx')
 
 function edit_form (data) {
@@ -18,6 +19,8 @@ function edit_form (data) {
       </div>
   </div>
 </form>
+<h2>Comments</h2>
+{comments}
           </main>
         </Def>
     )
