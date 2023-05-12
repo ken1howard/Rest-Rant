@@ -20,7 +20,7 @@ function edit_form (data) {
   </div>
 </form>
 <h2>Comments</h2>
-{comments}
+{comment}
           </main>
         </Def>
     )

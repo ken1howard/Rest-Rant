@@ -2,6 +2,16 @@ const React = require('react')
 const Def = require('../default')
 
 function new_form (data) {
+  let sumRatings = data.place.comments.reduce((tot, c) => {
+    return tot + c.stars
+  }, 0)
+  let averageRating = sumRatings / data.place.comments.length
+  rating = (
+    <h3>
+    {Math.round(averageRating)} stars
+    </h3>
+  )
+  
   let message =''
   if (data.message) {
     message = (
@@ -37,7 +47,7 @@ function new_form (data) {
 
   <div className="form-group">
                     <label htmlFor="founded">Founded Year</label>
-                    <input type='number' className ="form-control" id="founded" name="founded" value={new Date().getFullYear()} required />
+                    <input type='number' className ="form-control" id="founded" name="founded" defaultValue={new Date().getFullYear()} required />
                 </div>
 
   <div className="form-group">
@@ -45,7 +55,7 @@ function new_form (data) {
     <input className="form-control" id="cuisines" name="cuisines" required />
     
   </div>
-  <input className="btn btn-primary" type="submit" value="Add Place" />
+  <input className="btn btn-primary" type="submit" defaultValue="Add Place" />
 </form>
 
           </main>
